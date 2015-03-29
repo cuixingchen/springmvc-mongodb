@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* global style */
+body,div,img,table,td,tr,p,a,span,em,ul,li {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: '宋体', Simsun;
+}
+
+a,a:hover {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+ul,li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+/* Layout style */
+.easyui-layout {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+.north {
+    height: 90px;
+/*     background:  url(../images/header_bg.png); */
+background: #009B77;
+}
+
+.center {
+    margin: 0;
+    padding: 0;
+}
+
+.south {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    background: #ffffff;
+    border-top: 2px solid #009B77;
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+    color: #979797;
+    text-align: center;
+    line-height: 30px;
+}
+
+.iframe {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+/* north */
+.north-logo {
+    display: block;
+    float: left;
+    height: 100px;
+    width: 200px;
+    background: url(../image/logo.png) no-repeat center;
+    line-height: 50px;
+    text-align: center;
+    text-indent: 1000px;
+    overflow: hidden;
+}
+.north-title {
+    height: 50px;
+    position: absolute;
+    left: 0;
+}
+.north-title a {
+    display: block;
+    margin-left: 200px;
+    font-family: '幼圆';
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.north-nav {
+    width: 100%;
+    margin-top: 52px;
+}
+.north-nav ul {
+    margin-left: 400px;
+}
+.north-nav ul li {
+    float: left;
+	
+    width: 120px;
+}
+.north-nav ul li a {
+    display: block;
+    font-family: Microsoft YaHei;
+    font-size: 16px;
+    padding: 0 5px;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 38px;
+    color: #ffffff;
+}
+.north-nav ul li a:hover {
+    cursor: pointer;
+    background: url(../images/change_bg.png);
+}
+.selected {
+    background: url(../images/change_bg.png);
+}
+.north-user {
+    position: absolute;
+    top: 0;
+/*     margin-top: 25px; */
+    right: 0;
+    height: 100px;
+    line-height: 100px;
+}
+.north-user a {
+    margin-right: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+.north-user a:hover {
+    text-decoration: underline;
+}

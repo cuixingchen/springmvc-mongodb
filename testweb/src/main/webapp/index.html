@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<title>出租车支付管理平台</title>
+<link href="image/favicon.ico" rel="Shortcut Icon" />
+<link href="image/favicon.ico" rel="Bookmark" />
+<!-- public css -->
+<link href="framework/easyui/themes/metro/easyui.css" rel="stylesheet"
+	type="text/css"/>
+<link href="framework/easyui/themes/icon.css" rel="stylesheet"
+	type="text/css"/>
+<!-- index css -->
+<link href="css/index3.css" rel="stylesheet" type="text/css"/>
+<!-- public js -->
+<script src="framework/jquery/jquery-1.8.0.min.js"
+	type="text/javascript"></script>
+<script src="framework/easyui/jquery.easyui.min.js"
+	type="text/javascript"></script>
+<script src="framework/easyui/easyui-lang-zh_CN.js"
+	type="text/javascript"></script>
+<!-- index js -->
+<script src="js/util/hdsxUtils.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
+</head>
+<body class="easyui-layout" data-options="fit:true"
+	style="min-width: 1000px; min-height: 600px;">
+	<!-- header -->
+	<div class="north" data-options="region:'north',border:false">
+		<div class="north-title">
+			<a>数据共享平台管理</a>
+		</div>
+		<div class="north-nav">
+			<ul id="mainMenu">
+				<li><a href="page/base/sman.html" target="iframe_main">断线通知管理</a></li>
+			</ul>
+		</div>
+		<div class="north-user">
+			<a  href="javascript:updateUser();"  ><img src="images/ys.png"/></a> <a  class="logout"><img src="images/tc.png" /></a>
+		</div>
+	</div>
+	<!-- center -->
+	<div class="center" data-options="region:'center',border:false"
+		style='overflow-y: hidden'>
+		<iframe class="iframe" id="iframe_main" name="iframe_main"
+			frameborder="0" src="page/base/sman.html"></iframe>
+	</div>
+	<!-- footer -->
+	<div class="south" data-options="region:'south',border:false">
+		<div class="banquan">版权所有：北京恒达信息技术有限责任公司</div>
+	</div>
+	<div id="dlg_update" title="修改密码" style="display: none;padding: 40px;">
+            <form id="form_update" method="post">
+                <table class="dig-table" id="table_update">
+                     <tr>
+                        <td>
+                            <label><nobr>用户名：</nobr></label>
+                        </td>
+                        <td>
+                        	<input type="text" name="username" onblur="javascript:getUsername(this)" id="username" />
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <label><nobr>旧密码：</nobr></label>
+                        </td>
+                        <td>
+                        	<input type="password" name="oldPsw" id="oldPsw" />
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <label><nobr>新密码：</nobr></label>
+                        </td>
+                        <td>
+                        	<input type="password" name="newPsw1" id="newPsw1" />
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <label><nobr>确认密码：</nobr></label>
+                        </td>
+                        <td>
+                        	<input type="password" name="newPsw2" id="newPsw2" />
+                        </td>
+                    </tr>
+                    
+                </table>
+                <br />
+               
+            </form>
+        </div>
+</body>
+</html>

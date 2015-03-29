@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* global style */
+body,div,img,table,td,tr,p,a,span,em,ul,li {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: '宋体', Simsun;
+}
+
+a,a:hover {
+    text-decoration: none;
+    color: #333
+}
+
+ul,li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+/* Layout style */
+.easyui-layout {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+.center {
+    margin: 0;
+    padding: 0;
+}
+/* title */
+.panel-header {
+    padding: 10px 5px;
+}
+div.panel-title {
+    font-size: 16px;
+}
+/* dialog */
+.window .window-header {
+    padding: 10px 0;
+}
+.dig-table tr td {
+    padding: 2px 2px;
+}
+.dig-table select {
+    width: 155px;
+}
+.red-span {
+    color: red;
+    padding-right: 10px;
+}

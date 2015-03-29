@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- public css -->
+        <link href="../../framework/easyui/themes/metro/easyui.css" rel="stylesheet" type="text/css">
+        <link href="../../framework/easyui/themes/icon.css" rel="stylesheet" type="text/css">
+        <!-- layout css -->
+        <link href="../../css/layout.css" rel="stylesheet" type="text/css">
+        <!-- public js -->
+        <script src="../../framework/jquery/jquery-1.8.0.min.js" type="text/javascript"></script>
+        <script src="../../framework/easyui/jquery.easyui.min.js" type="text/javascript"></script>
+        <script src="../../framework/easyui/easyui-lang-zh_CN.js" type="text/javascript"></script>
+        <!-- layout js -->
+        <script type="text/javascript">
+        var layout_mkid=8;
+        </script>
+        <script src="../../js/layout.js" type="text/javascript"></script>
+    </head>
+    <body class="easyui-layout" data-options="fit:true">
+        <!-- left -->
+        <div class="west" data-options="region:'west',border:false">
+            <ul id="leftMenu">
+                <li><a class="selected" href="user.html" target="iframe_center">消息通知管理</a></li>
+                <li><a  href="record.html" target="iframe_center">消息记录管理</a></li>
+            </ul>
+        </div>
+        <!-- center -->
+        <div class="center" data-options="region:'center',border:false" style='overflow-y:hidden'>
+            <iframe class="iframe" id="iframe_center" name="iframe_center"  frameborder="0" src=""></iframe>
+        </div>
+    </body>
+</html>
