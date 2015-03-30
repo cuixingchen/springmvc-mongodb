@@ -2,7 +2,6 @@ package com.hdsx.testweb.service.impl;
 
 import org.springframework.stereotype.Service;
 
-import com.hdsx.testweb.mapper.MessageMapper;
 import com.hdsx.testweb.service.HelloWordService;
 
 @Service

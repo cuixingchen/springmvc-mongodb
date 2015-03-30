@@ -4,7 +4,7 @@ $(function() {
         fitColumns    : true,
         border        : false,
         loadMsg       : '正在加载数据，请稍候...',
-        url           : '../../rest/user/4',
+        url           : '../../rest/message/1',
         rownumbers    : true,
         autoRowHeight : true,
         striped       : true,
@@ -14,10 +14,14 @@ $(function() {
         pageList      : [ 10, 15, 20, 25, 30 ],
         columns : [ [
 //            { field : 'ck', checkbox : true },
-            { field : 'username', title : '用户名', width: 1 },
-            { field : 'jsms', title : '角色', width: 1
+            { field : 'city', title : '城市名称', width: 1 },
+            { field : 'xzqhdm', title : '行政区划代码', width: 1
             },
-            { field : 'scjsj', title : '创建时间', width: 1 }
+            { field : 'imail', title : '邮件', width: 1
+            },
+            { field : 'phone', title : '电话', width: 1
+            },
+            { field : 'message', title : '提示消息', width: 1 }
         ] ],
         toolbar : [ {
             text : '添加',
@@ -110,7 +114,7 @@ $(function() {
 
 function query() {
     $('#table').datagrid("load", {
-        username : $.trim($("#username").val())
+        city : $.trim($("#username").val())
     });
 }
 

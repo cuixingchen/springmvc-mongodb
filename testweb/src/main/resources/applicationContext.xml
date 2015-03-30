@@ -14,7 +14,7 @@
         http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
 
 
-	<context:component-scan base-package="com.hdsx.testweb.service" />
+	<context:component-scan base-package="com.hdsx.testweb" />
 
 	<!-- 用于持有ApplicationContext,可以使用SpringContextHolder.getBean('xxxx')的静态方法得到spring 
 		bean对象 -->
